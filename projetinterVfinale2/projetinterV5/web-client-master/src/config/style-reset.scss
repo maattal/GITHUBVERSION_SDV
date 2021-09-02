@@ -1,0 +1,46 @@
+@import "style-variables.scss";
+
+* {
+  font-family: Raleway;
+}
+
+*::selection {
+  color: white;
+  background-color: $secondary;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html,
+body,
+:global(#root) {
+  overflow-y: overlay;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  color: $txt-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 820px) {
+  :global(#root) {
+    width: 80%;
+    margin-left: 10%;
+  }
+}

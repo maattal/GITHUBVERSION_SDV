@@ -1,0 +1,116 @@
+@import "../../config/style-variables.scss";
+
+.home-container {
+ 
+  height: 90%;
+  width: 90%;
+  margin-left: 10%; 
+  place-items: center;             /* establish flex container */
+   flex-direction: column;     /* stack flex items vertically */
+
+  
+  .text {
+    margin: 0 1rem;
+
+    .title {
+      font-family: "Zilla Slab";
+      font-size: 2.75em;
+      text-align: center;
+      margin: 0;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 1.35em;
+      line-height: 2em;
+      margin: 2em 0;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        font-size: 1em;
+        padding: 0.6em 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+      }
+
+      .register {
+        background-color: $primary;
+        color: $bg-color;
+      }
+
+      .login {
+        color: $primary;
+        border: 2px solid $primary;
+      }
+    }
+  }
+
+  img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .home-container {
+    justify-content: space-between;
+
+    .text {
+      margin: 0;
+
+      .title {
+        font-size: 3.5rem;
+        text-align: start;
+      }
+      .title_2 {
+        font-size: 1.5rem;
+        text-align: start;
+      }
+
+      .description {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+        margin: 2.5rem 0;
+        text-align: start;
+      }
+
+      .actions {
+        justify-content: start;
+
+        a {
+          font-size: 1.5rem;
+          padding: 0.7rem 2.5rem;
+          text-align: center;
+        }
+
+        .register {
+          margin-right: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home-container {
+    justify-content: space-between;
+
+    .text {
+      width: 80%;
+    }
+   
+    img {
+      width: 60%;
+      height: 60%;
+      display: block;
+      margin-left: 15%;
+      margin-top: 5%;
+      margin-bottom: 0;
+    }
+  }
+}

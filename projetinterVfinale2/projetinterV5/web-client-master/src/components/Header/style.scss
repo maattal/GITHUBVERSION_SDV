@@ -1,0 +1,75 @@
+@import "../../config/style-variables.scss";
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: $bg-color;
+
+  nav {
+    
+    float: right;
+    
+
+    li {
+  
+      float:left;
+      
+    }
+
+    .avatar {
+       background-color: $secondary;
+      padding: 10px;
+      width: 24px;
+      height: 24px;
+      display: block;
+      text-align: center;
+      border-radius: 50%;
+      color: $bg-color;
+    }
+  }
+}
+
+@media screen and (min-width: 820px) {
+  header {
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 10%;
+    box-sizing: border-box;
+    float: right;
+    
+    .logo {
+      color: $bg-color;
+      background-color: $primary;
+      padding: 8px 36px;
+    }
+
+    nav {
+      margin: auto 0 auto 0;
+     
+      float: right;
+
+      ul {
+        list-style-type: none;
+        float: right;
+       
+        a {
+          margin-left: 30px;
+          text-decoration: none;
+          font-size: 1.45em;
+          cursor: pointer;
+         color: #0c4d5f;
+
+          &.active {
+          
+            color: #ffbb00;
+            ;
+          }
+        }
+      }
+    }
+  }
+}

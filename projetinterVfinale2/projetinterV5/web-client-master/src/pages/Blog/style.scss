@@ -1,0 +1,29 @@
+@import "../../config/style-variables.scss";
+
+.container {
+  margin-top: 200px;
+  padding: 20px;
+
+  h1 {
+    font-family: "Zilla Slab";
+    text-align: center;
+    font-size: 3em;
+  }
+}
+
+.write-post-button {
+  margin: 20px 0;
+  width: fit-content;
+  background-color: $primary;
+  color: $bg-color;
+  font-size: 1em;
+  padding: 0.6em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    background-color: darken($primary, 5);
+  }
+}

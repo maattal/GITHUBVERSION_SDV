@@ -1,0 +1,157 @@
+@import "../../config/style-variables.scss";
+
+.bigcontainer{
+   
+    justify-content: center;
+    height:20%;
+    width: 20%;
+    place-items: center;   
+  // flex-direction: column;
+  // display: flex;
+  // margin-top: 50%;
+  // margin-bottom: 50%;
+}
+
+
+.container {
+  height:auto;
+  width: auto;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 0;
+  // margin-bottom: 50px;
+  // flex-direction: column;
+  // display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+ 
+  h1 {
+    font-family: "Zilla Slab";
+    text-align: center;
+    font-size: 3em;
+  }
+}
+
+  .subcontainer{
+ margin:0;
+ height:70%;
+ width: 70%;
+}
+
+.subcontainer2{
+  height:70%;
+  width: 70%;
+  margin-top: 40px;
+  margin-left: 200px;
+ 
+ }
+
+
+
+
+
+
+/*
+.text {
+    margin: 0 1rem;
+
+    .title {
+      font-family: "Zilla Slab";
+      font-size: 2.75em;
+      text-align: center;
+      margin: 0;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 1.35em;
+      line-height: 2em;
+      margin: 2em 0;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        font-size: 1em;
+        padding: 0.6em 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+      }
+
+      .register {
+        background-color: $primary;
+        color: $bg-color;
+      }
+
+      .login {
+        color: $primary;
+        border: 2px solid $primary;
+      }
+    }
+  }
+
+  img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .home-container {
+    justify-content: space-between;
+
+    .text {
+      margin: 0;
+
+      .title {
+        font-size: 3.5rem;
+        text-align: start;
+      }
+
+      .description {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+        margin: 2.5rem 0;
+        text-align: start;
+      }
+
+      .actions {
+        justify-content: start;
+
+        a {
+          font-size: 1.5rem;
+          padding: 0.7rem 2.5rem;
+          text-align: center;
+        }
+
+        .register {
+          margin-right: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home-container {
+    justify-content: space-between;
+
+    .text {
+      width: 50%;
+    }
+
+    img {
+      width: 40%;
+      height: 40%;
+      display: block;
+    }
+  }
+}
+
+
+*/
